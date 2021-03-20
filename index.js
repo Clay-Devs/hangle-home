@@ -1,4 +1,4 @@
-const app = require('express')
+const app = require('express')()
 app.use((req,res) => {
     if (req.path === '/') {
         res.sendFile(__dirname + '/index.html')
